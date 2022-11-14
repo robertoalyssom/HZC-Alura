@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "icones";
+    src: url(../font/icones.ttf);
+}
+
+body {
+    background-color: #1D232A;
+    font-family: 'Open Sans', 'icones', sans-serif;
+}
+
+/*-- header --*/
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: #15191C;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.cabecalho__logo {
+    width: 40px;
+}
+
+.cabecalho__menu::before {
+    content: "\e904";
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+.cabecalho_notificacao::before {
+    content: "\e906";
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+/*-- Menu lateral --*/
+.menu__lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: #15191C;
+    width: 70vw;
+    height: 100%;
+    
+    position: relative;
+    z-index: 99;
+}
+
+.menu-lateral__logo {
+    width: 118px;
+    align-self: center;
+    padding: 20px 0;
+}
+
+.menu-lateral__link { /* falta ajustar alinhamento do contúdo quando tem borda*/
+    display: flex;
+    align-items: center; /*-- alinhar todo o conteúdo dessa tag filho no meio*/
+    height: 60px;
+    padding-left: 90px;
+}
+
+.menu-lateral__link--ativo {
+    border-left: solid 10px #FFFFFF;
+    color: #FFFFFF;
+
+}
+
+.menu-lateral__link--inicio::before {
+    content: "\e902";
+    font-size: 1.3rem;
+    position: absolute;
+    left: 45px;
+}
+
+.menu-lateral__link--videos::before {
+    content: "\e90e";
+    font-size: 1.3rem;
+    position: absolute;
+    left: 45px;
+}
+
+.menu-lateral__link--picos::before {
+    content: "\e908";
+    font-size: 1.3rem;
+    position: absolute;
+    left: 45px;
+}
+
+.menu-lateral__link--integrantes::before {
+    content: "\e903";
+    font-size: 1.3rem;
+    position: absolute;
+    left: 45px;
+}
+
+.menu-lateral__link--camisas::before {
+    content: "\e900";
+    font-size: 1.3rem;
+    position: absolute;
+    left: 45px;
+}
+
+.menu-lateral__link--pinturas::before {
+    content: "\e90a";
+    font-size: 1.3rem;
+    position: absolute;
+    left: 45px;
+}
