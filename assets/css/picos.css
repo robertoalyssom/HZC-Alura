@@ -34,15 +34,22 @@ body {
 }
 
 /*-- Menu lateral --*/
-.menu__lateral {
+.menu-lateral {
     display: flex;
     flex-direction: column;
     background-color: #15191C;
     width: 70vw;
-    height: 100%;
+    height: 100vh;
     
-    position: relative;
+    position: absolute;
+    left: -600px;
     z-index: 99;
+    transition: .25s;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
 }
 
 .menu-lateral__logo {
@@ -55,11 +62,11 @@ body {
     display: flex;
     align-items: center; /*-- alinhar todo o conteúdo dessa tag filho no meio*/
     height: 60px;
-    padding-left: 90px;
+    padding-left: 60px;
 }
 
 .menu-lateral__link--ativo {
-    border-left: solid 10px #FFFFFF;
+    border-left: solid 8px #FFFFFF;
     color: #FFFFFF;
 
 }
@@ -68,40 +75,82 @@ body {
     content: "\e902";
     font-size: 1.3rem;
     position: absolute;
-    left: 45px;
+    left: 25px;
 }
 
 .menu-lateral__link--videos::before {
     content: "\e90e";
     font-size: 1.3rem;
     position: absolute;
-    left: 45px;
+    left: 25px;
 }
 
 .menu-lateral__link--picos::before {
     content: "\e908";
     font-size: 1.3rem;
     position: absolute;
-    left: 45px;
+    left: 25px;
 }
 
 .menu-lateral__link--integrantes::before {
     content: "\e903";
     font-size: 1.3rem;
     position: absolute;
-    left: 45px;
+    left: 25px;
 }
 
 .menu-lateral__link--camisas::before {
     content: "\e900";
     font-size: 1.3rem;
     position: absolute;
-    left: 45px;
+    left: 25px;
 }
 
 .menu-lateral__link--pinturas::before {
     content: "\e90a";
     font-size: 1.3rem;
     position: absolute;
-    left: 45px;
+    left: 25px;
+}
+
+/*-- Conteúdo --*/
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 15px;
+}
+
+.titulo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.titulo-videos {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.cartao {
+    color: #FFFFFF;
+    background-color: #2C343A;
+}
+
+.cartao__principal {
+    margin-bottom: 10px;
+}
+
+.imagem-mapa {
+    width: 100%;
+}
+
+.secao {
+    display: grid;
+    gap: 20px;
+}
+
+.secao-videos {
+    
 }
