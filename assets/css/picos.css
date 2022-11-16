@@ -117,7 +117,7 @@ body {
 .conteudo {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     padding: 20px 15px;
 }
 
@@ -134,23 +134,76 @@ body {
 }
 
 .cartao {
+    width: 100%;
+    overflow: hidden;
     color: #FFFFFF;
     background-color: #2C343A;
+    border-radius: 16px;
 }
 
 .cartao__principal {
-    margin-bottom: 10px;
+    height: 450px;
+    margin-bottom: 12px;
 }
 
 .imagem-mapa {
     width: 100%;
+    height: 100%;
 }
 
 .secao {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
 .secao-videos {
     
+}
+
+.cartao__conteudo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 13px;
+    padding: 15px 18px;
+    align-items: center;
+}
+
+.cartao__perfil {
+    font-size: .9rem;
+    color: #95999C;
+    grid-column: span 2;
+}
+
+.cartao__titulo {
+    grid-column: span 2;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cartao__visualizacoes {
+    color: #95999C;
+    font-size: .9rem;
+}
+
+.cartao__visualizacoes::before {
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.botao {
+    background-color: #0480DC;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.botao__localizacao {
+    width: 40px;
+    height: 40px;
+    justify-self: end;
+}
+
+.botao__localizacao::before {
+    content: "\e908";
+    font-size: 1.5rem;
 }
